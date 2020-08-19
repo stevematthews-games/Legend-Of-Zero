@@ -1,0 +1,318 @@
+v0.05
+
+///CHANGES
+
+*Made changes as per google Doc on map
+
+*Created code and animations for hearts. This ranges from 3-10 hearts as per number of upgrades available
+
+*Created code for transitioning to other rooms that keeps the player on the same x or y plane depending on which
+direction they exited for smooth gameplay purposes.
+
+*Completed invisible barriers on the map to stop the player traversing the area. There are two types of barriers, solid which
+will not let anything through, and water, which allows bombs and fire to pass through.
+
+
+
+v0.06
+
+///CHANGES
+
+*Added ability to refresh the room by pressing Enter (Return). This takes the played back to where they started in the Room.
+
+*Added ability to restart the game by pressing the Escape key.
+
+*Completed transitions between cracks in walls and the treasure rooms they feed to. Currently use Q to set all rooms to blocked off
+and W to make all rooms open. You need to refresh the room for changes to take place currently.
+
+*Completed Transitions between doors and dungeons and back again. Whole map is now accesible. Upon entering last dungeon and leaving
+through one of 4 doors the game restarts.
+
+///BUG FIXES
+
+*Fixed a bug with moving to rooms to the west of current location causing player to become stuck.
+
+
+
+v0.07
+
+///CHANGES
+
+*Adjusted the layers so player should now be above all else when walking around except for the tops of trees.
+
+*Froze player movement for half a second when entering or exiting main dungeons to stop the player flicking back and forth between the two
+
+*Coded in arrows to fire and activate switches thus removing doors blocking the path
+
+*Coded heart containers to increase health and heal, coded icon to appear at top right to show upgrade obtained
+
+*Added Bombs, activated wall cracks and included bomb icon upon collection of bombs
+
+*Added Fire power and associated items.
+
+*Added ability to burn away bushes. Bushes now block access but may be burnt away
+
+*Coded keys to pick up and padlocks to unlock when respective keys held
+
+*Coded in the 3 relics
+
+*Included visual representation of what has been collected for testing purposes. A UI will need to be decided upon for a clean look later.
+
+
+
+v0.08
+///CHANGES
+*Bombs are now created infront of the player, stationary, in the direction the player is facing.
+
+*Bombs now cause damage to the player
+
+*Bombs no longer damage trees and shrubs
+
+*Arrows no longer pass through any medium or large plants (will fly over the top of small)
+
+*Bushes will now set each other on fire when hit with a fireball. I will set similar behaviour for enemies once I start them.
+
+*Heart Containers now no longer reset when leaving and reentering.
+
+*Made a start on having plants not respawning after exiting and entering room. Currently rooms starting 2 or 3 with plants are working correctly i.e. room 3c.
+
+
+
+
+v0.09
+///CHANGES
+
+*Completed the coding of plants and object in rooms being consistent.
+
+*Created a pause menu
+
+-Changed gate on 5c to disappear when padlock unlocked
+
+
+
+
+
+v0.10
+///CHANGES
+
+*Pause menu now includes maps for the area you are currently in. Map shows only rooms you have explored and highlights your current room with a red box
+
+*Grass in square 5C blended inbetween the two colours
+
+*Coded in melee enemies movement, attacks and reactions to attacks
+
+*Coded in Ranged enemies movement, attacks and reactions to attacks (Note: Spider currently shooting arrows. We will need a more appropriate sprite to fire)
+
+*Coded in Summoner movement, attacks and reactions to attacks
+
+*Enemies placed in gameworld
+
+*Coded sword upgrade logic
+
+
+
+
+v0.11
+///CHANGES
+
+*Changed bomb damage to player from 0.5 to 2
+
+*Changed player delay and enemy delay when entering room
+
+*Changed delay after attacks for enemy
+
+*Added invulnerability frames to player and enemies after being attacked
+
+*Added a button to provide infinite health and allowed player to die and game over. Game restarts on Game Over
+
+*Fixed a bug with fireball having wrong fire rate
+
+*Ranged enemies now fire at any angle
+
+*Changed knockback values
+
+*Enemies now cannot move or attack again for 1 second after attacking
+
+*Added health regeneration to campfires
+
+*Began creation of test rooms for Rome Boss (not yet accesible)
+
+*Completed basic speed test room
+
+
+
+
+v0.12
+///CHANGES
+
+*Can now press ESC to return to start screen from speedtest room
+
+*Enemy AI now pathfind to the player
+
+*Enemies will no loner stack on top of each other (Currently only fixed with the overworld skeletons)
+
+*Rome Test A now complete.
+
+
+
+
+
+v0.13
+///CHANGES
+*Completely reworked enemy movement
+
+*Completly reworked enemy collisions
+
+*Included Rome Boss Room to the game (just need to swap 2 skeletons for crossbow skeletons)
+
+*Removed testing environments (speed test and Rome Boss test)
+
+*Set max necromancer spawn rate to 5
+
+*Changed spider weapon animation to web
+
+*Doubled size of the rome boss bubble to 96x96 from 48x48 as I felt the smaller size was not effective
+
+*Can now not exit the boss room until the boss is defeated.
+
+*Set enemies to ignore player unless closer than 150 pixels
+
+
+v0.14
+////CHANGES
+*Added boss to Rome Boss room, fight now works as should.
+
+*Lowered player speed by 50% (also lowering all enemies speeds and projectiles by 50% to match, I feel this is now too slow though)
+
+*Removed pathing grid overlays from overworld skeletons as only for testing purposes.
+
+*Removed test rooms from the title screen (please see v0.12 if you wish to access these)
+
+*Chagned the rome boss room to a door blocking access rather than a red lock
+
+*Changed Room Boss pillars
+
+*Created a potential Boss Room that is double the width of previous room (not accesible this build)
+
+
+v0.15
+///CHANGES
+
+*Moved Health display to the GUI layer to ensure hearts always display above everything
+
+*Completed work on 2xwide rome boss room and added as a test from the title screen
+
+*Made changes to collision system. Player now should no longer get stuck against enemies.
+
+
+v0.16
+///CHANGES
+
+*Collision and knockback system now implemented across all enemies.
+
+*Set path speed for all enemies.
+
+vo.17
+///CHANGES
+
+*Overhauled Collision and knockback system from previous version to be more refined and work better.
+
+*Added sprites for all standard enemy animations
+
+*Added animations to all standard enemies
+
+*Changed boss room from old version to test version.
+
+v0.18
+///CHANGES
+
+
+*Added player animations
+
+*Added Rome Boss Animations
+
+*Added Rome Boss knockback and Collisions
+
+*Added delays to player weapons firing to align with animations
+
+*Added interaction between player and world items resulting in pickup animation
+
+*Removed upgrades being unlocked from the start (Inf. Health still activated by pressing F)
+
+
+
+v0.19
+///CHANGES
+
+*Added temple, overworld and ????? signs to the related rooms.
+
+*Slightly altered title screen
+
+*Removed test room from title menu
+
+*Changed initital sprites of enemies to incorporate spawning from the ground
+
+*Heart containers were respawning when they shouldn't have been after being collected, this has now been fixed.
+
+*Added pickup animation to keys
+
+*Small error in enemy characters knocking back the player fixed so player now knocksback
+
+*Fixed an issue with player dying and game over being displayed
+
+*Rome boss no longer drops a red key
+
+
+
+v0.20
+///CHANGES
+
+*Fixed a bug where hits from spider web always moved player left.
+
+*Fixed a big where player animation still showed wlaking when should be stopped during rome boss phases
+
+*Fixed a bug where attacks on enemies were counting multiple times with the sword.
+
+
+
+
+
+
+
+///TO DO
+
+*Sometimes bowskeletons are not being killed. Noticeably the pair in the roman dungeon. May be a clipping issue with something
+
+*May be an issue with the player knockback distance when hit with own fire and holding a keydown.
+**REPLICATION - Happens occasionally when walking up in to fire and pushes all the way down in to the wall on room6c.
+
+*Enemy attacks showing below player and not moving with knockback
+
+
+
+KNOCKBACK TESTING
+*Change obj_knocktest collision with self from exact angles to 90 degree areas
+
+*Intersect Boundary not working properly
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
